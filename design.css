@@ -1,0 +1,478 @@
+body {
+  padding: 0;
+  height: 5000px;
+  margin: 0;
+}
+
+body p {
+  font-family: arial;
+}
+
+.main_head {
+  background-color: #ffbaba;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 400px;
+  z-index: -2;
+}
+
+.main_head .cover_photo {
+  background-color: lightgrey;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 200px;
+  z-index: -5;
+}
+
+.main_head .cover_photo .cover_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.main_head .profile_photo {
+  background-color: black;
+  position: absolute;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  bottom: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_head .profile_photo svg {
+  fill: white;
+  width: 65px;
+}
+
+.main_head .info_section {
+  background-color: black;
+  margin-top: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_head .info_section .button {
+  background-color: black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.main_head .info_section .button .follow_btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.main_head .info_section .name {
+  background-color: black;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main_head .info_section .name .user_name {
+  background-color: black;
+  margin-left: 10px;
+  position: absolute;
+  top: 5px;
+}
+
+.main_head .info_section .name .user_name .name_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_head .info_section .name .user_name .name_section .data_name .user_data_name {
+  font-family: arial;
+  font-weight: bold;
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.main_head .info_section .name .user_name .name_section .valid_acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3px;
+}
+
+.main_head .info_section .name .user_name .name_section .valid_acc svg {
+  width: 20px;
+  fill: #2798e6;
+}
+
+.main_head .info_section .name .user_name .name_section .valid_acc .svspro {
+  fill: white;
+  border: 1px solid rgba(255, 255, 255, 0.205);
+  border-radius: 3px;
+  margin-left: 3px;
+  padding: 2.5px;
+  width: 10px;
+}
+
+.main_head .info_section .name .user_name .user_email {
+  margin: 0;
+  font-size: 15px;
+  color: #6b6c70;
+  margin-top: 3px;
+}
+
+.main_head .info_section .name .join_date {
+  background: black;
+  margin-left: 10px;
+  margin-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.main_head .info_section .name .join_date p {
+  font-size: 15px;
+}
+
+.main_head .info_section .name .join_date .user_location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_head .info_section .name .join_date .user_location svg {
+  width: 15px;
+  fill: #6b6c70;
+}
+
+.main_head .info_section .name .join_date .user_xd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_head .info_section .name .join_date .user_xd svg {
+  width: 10px;
+  margin-right: -2px;
+  fill: #6b6c70;
+}
+
+.main_head .info_section .name .join_date .user_xd p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b6c70;
+}
+
+.main_head .info_section .name .join_date .user_calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_head .info_section .name .join_date .user_calendar svg {
+  width: 15px;
+  fill: #6b6c70;
+}
+
+.main_head .info_section .name .join_date .user_date p {
+  margin: 0;
+  color: #6b6c70;
+}
+
+.main_head .info_section .name .followers_total {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin-left: 10px;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.main_head .info_section .name .followers_total div p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b6c70;
+}
+
+.main_head .info_section .name .followers_total div p span {
+  font-weight: bold;
+  color: white;
+}
+
+.main_head .info_section .bottom_menu {
+  background-color: black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #6b6c70;
+  margin-top: 10px;
+}
+
+.main_head .info_section .bottom_menu div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.main_head .info_section .bottom_menu div p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12.5px;
+  color: #6b6c70;
+}
+
+.main_head .info_section .bottom_menu .post {
+  position: relative;
+}
+
+.main_head .info_section .bottom_menu .post p {
+  color: white;
+}
+
+.main_head .info_section .bottom_menu .post .active {
+  position: absolute;
+  height: 5px;
+  width: 60%;
+  border-radius: 50px;
+  bottom: 0;
+  background-color: #2798e6;
+}
+
+.tweets_section {
+  margin-top: 400px;
+  background-color: black;
+  padding: 0;
+}
+
+.tweets_section .some_tweets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #6b6c70;
+  padding-top: 12px;
+}
+
+.tweets_section .some_tweets .left_profile {
+  width: 55px;
+  position: relative;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.tweets_section .some_tweets .left_profile svg {
+  fill: white;
+  width: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.tweets_section .some_tweets .tweets_info {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.tweets_section .some_tweets .tweets_info p {
+  color: #6b6c70;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section div .name_user {
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .star svg {
+  width: 14px;
+  fill: #2798e6;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .x_sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .x_sign svg {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  width: 8px;
+  padding: 2px;
+  fill: white;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .emial_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .emial_section p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .Dots {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.tweets_section .some_tweets .tweets_info .user_name_section .Dots svg {
+  width: 15px;
+  fill: #6b6c70;
+  margin-right: 7px;
+}
+
+.tweets_section .some_tweets .tweets_info .user_tweet .tweets {
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 8px 0px;
+  width: 90%;
+}
+
+.tweets_section .some_tweets .tweets_info .user_likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.tweets_section .some_tweets .tweets_info .user_likes div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 2px;
+}
+
+.tweets_section .some_tweets .tweets_info .user_likes div svg {
+  width: 12px;
+  fill: #6b6c70;
+}
+
+.tweets_section .some_tweets .tweets_info .user_likes div p {
+  font-size: 10px;
+  margin: 0;
+  margin-left: 3px;
+}
+/*# sourceMappingURL=design.css.map */

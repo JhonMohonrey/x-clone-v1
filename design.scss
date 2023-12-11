@@ -1,0 +1,416 @@
+body {
+    padding: 0;
+    height: 5000px;
+    margin: 0;
+
+    p {
+        font-family: arial;
+    }
+}
+
+.main_head {
+    background-color: rgb(255, 186, 186);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 400px;
+    z-index: -2;
+
+    .cover_photo {
+        background-color: lightgrey;
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 200px;
+        z-index: -5;
+
+        .cover_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .profile_photo {
+        // z-index: 1;
+        background-color: black;
+        position: absolute;
+        left: 15px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        bottom: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            fill: white;
+            width: 65px;
+        }
+
+    }
+
+    .info_section {
+        // background-color: rgb(0, 204, 255);
+        background-color: black;
+        margin-top: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        .button {
+            background-color: black;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+
+            .follow_btn {
+                background-color: white;
+                color: black;
+                font-weight: bold;
+                padding: 8px 15px;
+                border: none;
+                border-radius: 50px;
+                margin-right: 20px;
+                z-index: 3;
+                cursor: pointer;
+            }
+        }
+
+        .name {
+            background-color: black;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            
+            .user_name {
+                background-color: black;
+                margin-left: 10px;
+                position: absolute;
+                top: 5px;
+
+                .name_section {
+                    display: flex;
+                    align-items: center;
+
+                    .data_name {
+                        .user_data_name {
+                            font-family: arial;
+                            font-weight: bold;
+                            margin: 0;
+                            font-size: 20px;
+                            color: white;
+                        }
+                    }
+    
+                    .valid_acc {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 3px;
+    
+                        svg {
+                            width: 20px;
+                            fill: rgb(39, 152, 230);
+                        }
+
+                        .svspro {
+                            fill: white;
+                            border: 1px solid rgba(255, 255, 255, 0.205);
+                            border-radius: 3px;
+                            margin-left: 3px;
+                            padding: 2.5px;
+                            width: 10px;
+                        }
+                    }
+                }
+                
+                .user_email {
+                    margin: 0;
+                    font-size: 15px;
+                    color: rgb(107, 108, 112);
+                    margin-top: 3px;
+                }
+
+            }
+
+            .join_date {
+                background: black;
+                margin-left: 10px;
+                margin-top: 58px;
+                display: flex;
+                height: 20px;
+                align-items: center;
+                gap: 5px;
+
+                p {
+                    font-size: 15px;
+                }
+
+                .user_location {
+                    display: flex;
+                    svg {
+                        width: 15px;
+                        fill: rgb(107, 108, 112);
+
+                    }
+                }
+
+                .user_xd {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 10px;
+                        margin-right: -2px;
+                        // margin-bottom: 1.5px;
+                        fill: rgb(107, 108, 112);
+                    }
+                    
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+                        color: rgb(107, 108, 112);
+                    }
+                }
+
+                .user_calendar {
+                    display: flex;
+
+                    svg {
+                        width: 15px;
+                        fill: rgb(107, 108, 112);
+                    }
+                }
+
+                .user_date {
+                    
+                    p {
+                        margin: 0;
+                        color: rgb(107, 108, 112);
+
+                    }
+                }
+            }
+
+            .followers_total {
+                background-color: black;
+                display: flex;
+                width: 75%;
+                margin-left: 10px;
+                gap: 15px;
+                margin-top: 10px;
+
+                div {
+                    // border: 1px solid black;
+
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+                        color: rgb(107, 108, 112);
+
+                        span {
+                            font-weight: bold;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_menu {
+            background-color: black;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(107, 108, 112);
+            margin-top: 10px;
+
+            div {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 12.5px;
+                    color: rgb(107, 108, 112);
+                }
+            }
+
+            .post {
+                position: relative;
+
+                p {
+                    color: white;
+                }
+
+                .active {
+                    position: absolute;
+                    height: 5px;
+                    width: 60%;
+                    border-radius: 50px;
+                    bottom: 0;
+                    background-color: rgb(39, 152, 230);
+                }
+            }
+        }
+    }
+}
+
+.tweets_section {
+    // border: 1px solid black;
+    margin-top: 400px;
+    background-color: black;
+    padding: 0;
+
+    .some_tweets {
+        // border: 1px solid green;
+        display: flex;
+        // border-top: 1px solid rgb(107, 108, 112);
+        border-bottom: 1px solid rgb(107, 108, 112);
+        padding-top: 12px;
+
+        div {
+            // border: 1px solid red;
+        }
+
+        .left_profile {
+            // flex: 1;
+            width: 55px;
+            position: relative;
+            height: 50px;
+            margin-right: 5px;
+
+            svg {
+                fill: white;
+                width: 15px;
+                // border: 1px solid white;
+                padding: 10px;
+                border-radius: 50px;
+                margin: 0;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+        }
+
+        .tweets_info {
+            flex: 4;
+            // padding-top: 5px;
+
+            p {
+                color: rgb(107, 108, 112);
+            }
+
+            div {
+                // border: 1px solid red;
+            }
+
+            .user_name_section {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                div {
+                    // background-color: green;
+
+                    .name_user {
+                        margin: 0;
+                        font-weight: bold;
+                        font-size: 12px;
+                    }
+                }
+                
+                .star {
+                    display: flex;
+                    svg {
+                        width: 14px;
+                        fill: rgb(39, 152, 230);
+                    }
+                }
+
+                .x_sign {
+                    display: flex;
+
+                    svg {
+                        border: 1px solid rgba(255, 255, 255, 0.171);
+                        width: 8px;
+                        padding: 2px;
+                        fill: white;
+                    }
+                }
+
+                .emial_section {
+                    display: flex;
+
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+
+                .Dots {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+
+                    svg {
+                        // border: 1px solid pink;
+                        width: 15px;
+                        fill:  rgb(107, 108, 112);
+                        margin-right: 7px;
+                    }
+                }
+            }
+
+            .user_tweet {
+
+                .tweets {
+                    color: white;
+                    font-weight: normal;
+                    font-size: 12px;
+                    margin: 8px 0px;
+                    width: 90%;
+                }
+            }
+
+            .user_likes {
+                display: flex;
+                margin-bottom: 12px;
+                // border: 1px solid green;
+
+                div {
+                    // border: 1px solid red;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    padding-left: 2px;
+
+                    svg {
+                        width: 12px;
+                        fill: rgb(107, 108, 112);
+                    }
+
+                    p {
+                        font-size: 10px;
+                        margin: 0;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
