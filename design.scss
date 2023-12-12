@@ -68,10 +68,12 @@ body {
             display: flex;
             align-items: center;
             justify-content: right;
+            margin-top: 5px;
 
             .follow_btn {
-                background-color: white;
-                color: black;
+                // background-color: white;
+                background-color: rgb(201, 54, 204);
+                color: white;
                 font-weight: bold;
                 padding: 8px 15px;
                 border: none;
@@ -329,6 +331,7 @@ body {
                         margin: 0;
                         font-weight: bold;
                         font-size: 12px;
+                        color: white;
                     }
                 }
                 
